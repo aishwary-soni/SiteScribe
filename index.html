@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,7 +6,10 @@
   <title>SiteScribe | Mid Term Assignment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+:root{--bg:#e6e4de;--ink:#13273b;--yellow:#ffc20e;--orange:#f26a1b;--blue:#2f6da3;--red:#b5432a;--concrete:#cfcac0;--white:#fff}*{box-sizing:border-box}html{scroll-padding-top:70px;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Barlow,Arial,sans-serif}h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.05;margin:0 0 .4em}h1{font-size:clamp(2.7rem,7vw,5.5rem)}h2{font-size:clamp(2rem,5vw,3.4rem);margin-top:3rem}h3{font-size:1.45rem}p{margin:.4em 0 1em;max-width:70ch}.tab-nav{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:6px;overflow-x:auto;padding:8px 14px;background:var(--ink)}.tab-nav b{font:700 1.6rem "Barlow Condensed";color:var(--yellow);margin-right:12px;white-space:nowrap}.tab-nav button{min-height:44px;border:2px solid transparent;border-radius:6px;background:none;color:white;font:600 15px Barlow;white-space:nowrap;padding:8px 12px;cursor:pointer}.tab-nav button[aria-current=true]{background:var(--yellow);color:var(--ink)}.tape{height:14px;background:repeating-linear-gradient(-45deg,var(--yellow) 0 14px,var(--ink) 14px 28px)}.page{display:none;max-width:1120px;margin:auto;padding:32px 18px 80px}.page.is-active{display:block}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;min-height:520px}.hero-board{height:360px;display:grid;place-items:center;text-align:center;background:var(--orange);border:2px solid var(--ink);border-radius:8px;box-shadow:8px 8px 0 var(--ink);transform:rotate(2deg)}.hero-board strong{font:3rem/1 "Barlow Condensed"}.hero-board small{font-size:.75rem}.eyebrow{display:inline-block;background:var(--orange);border:2px solid var(--ink);padding:.35rem .55rem;font:700 .75rem "Barlow Condensed";letter-spacing:.08em}.btn{background:var(--yellow);color:var(--ink);border:2px solid var(--ink);border-radius:6px;box-shadow:0 3px 0 var(--ink);font:600 16px Barlow;padding:11px 18px;min-height:44px;cursor:pointer;margin:0 8px 8px 0}.btn:hover{background:var(--orange)}.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--ink)}.chain{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.chain span{border:2px solid var(--ink);border-radius:6px;background:var(--white);padding:6px 10px;font-weight:600;transition:background .3s}.chain span.lit{background:var(--orange)}.source{font-size:13px;color:#46566a}.grid{display:grid;gap:16px}.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}.card,.placeholder{background:var(--white);border:2px solid var(--ink);border-radius:8px;padding:16px;margin-bottom:16px}.funnel div{margin:6px auto;padding:8px;text-align:center;border:2px solid var(--ink);border-radius:6px;background:var(--concrete)}.funnel div:nth-child(2){width:75%;background:var(--yellow)}.funnel div:nth-child(3){width:48%;background:var(--orange)}.big-stat{font:3rem "Barlow Condensed"}.bar{display:flex;align-items:center;gap:8px;margin:8px 0}.bar i{height:22px;display:block;background:var(--blue);border:2px solid var(--ink);border-radius:3px}.bar i.hot{background:var(--orange)}.table-wrap{overflow-x:auto;margin-bottom:18px}table{width:100%;border-collapse:collapse;background:var(--white);border:2px solid var(--ink);font-size:15px}th,td{border:1px solid var(--ink);padding:10px;text-align:left;vertical-align:top}th{background:var(--ink);color:white}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.flow div{border:2px solid var(--ink);border-radius:6px;background:var(--white);padding:11px;font-size:15px}.flow .warning{background:var(--red);color:white}.mini-flow{grid-template-columns:1fr 1fr}.journey{grid-template-columns:repeat(3,1fr)}.wall button{display:block;width:100%;text-align:left;margin:0 0 6px;border:2px solid var(--ink);border-radius:4px;padding:12px;font:600 16px Barlow;cursor:pointer;background:var(--concrete)}.wall button[aria-expanded=true]{background:var(--yellow)}.wall button+ p{display:none;margin:0 0 10px;padding:0 6px}.wall button[aria-expanded=true]+p{display:block}.level{display:inline-block;border:2px solid var(--ink);border-radius:4px;padding:2px 6px;font-weight:600}.level.high{background:var(--orange)}.level.medium{background:var(--yellow)}label{display:block;font-weight:600;margin:8px 0 2px}input{width:100%;padding:10px;border:2px solid var(--ink);border-radius:6px;font:16px Barlow}.result{font:700 2rem "Barlow Condensed";margin-top:12px}.placeholder{border-style:dashed;min-height:75px}.footer{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:24px 5vw;background:var(--ink);color:white;font-size:14px}.footer-link{border:0;background:none;color:var(--yellow);font:600 14px Barlow;cursor:pointer;padding:0}.footer b{font:1.4rem "Barlow Condensed";color:var(--yellow)}@media(max-width:800px){.hero,.grid-2,.grid-3,.journey{grid-template-columns:1fr}.hero-board{height:240px}.flow{grid-template-columns:1fr 1fr}.footer{align-items:flex-start;flex-direction:column}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+
+  </style>
 </head>
 <body>
   <nav class="tab-nav" aria-label="Site sections"><b>SiteScribe</b><button data-page="0" aria-current="true">1 The site</button><button data-page="1">2 The AI</button><button data-page="2">3 The business</button><button data-page="3">4 Trust and journey</button><button data-page="4">Appendix</button></nav>
@@ -21,7 +24,7 @@
     <section class="page" id="page-1">
       <h1>What the AI does</h1><p>Three engines feed one shared brain. The AI handles the chain, but the step that matters most stays human.</p>
       <div class="table-wrap"><table><thead><tr><th>Engine</th><th>What the AI does</th><th>What the human does</th></tr></thead><tbody><tr><td>Language Bridge</td><td>Translates conversations and keeps one record in the team's languages.</td><td>The other person confirms costs and measurements.</td></tr><tr><td>Project Brain</td><td>Links plans, materials, workers, costs and dates into a schedule.</td><td>Contractor checks the list and sends a site photo.</td></tr><tr><td>Smart Buy</td><td>Finds nearby vendors, compares prices and gives reasons.</td><td>Contractor chooses the vendor and places the order.</td></tr></tbody></table></div>
-      <h2>The Change Agent</h2><div class="flow"><div>1 Owner says in Marathi: “Make the bathroom bigger.”</div><div>2 AI translates the request</div><div>3 AI checks the plan and schedule</div><div>4 AI works out cost and days</div><div>5 AI finds vendors and timing</div><div>6 AI rewrites messages</div><div class="warning">7 Stop: a human approves</div><div>8 AI updates the shared record</div></div><p class="source">The AI does the work. Humans make the decisions.</p>
+      <h2>The Change Agent</h2><div class="flow"><div>1 Owner says in Marathi: â€œMake the bathroom bigger.â€</div><div>2 AI translates the request</div><div>3 AI checks the plan and schedule</div><div>4 AI works out cost and days</div><div>5 AI finds vendors and timing</div><div>6 AI rewrites messages</div><div class="warning">7 Stop: a human approves</div><div>8 AI updates the shared record</div></div><p class="source">The AI does the work. Humans make the decisions.</p>
       <div class="grid grid-2"><article class="card"><h3>Try a change</h3><label for="area">Extra area (sq ft)</label><input id="area" type="number" min="0"><label for="price">Material price per sq ft</label><input id="price" type="number" min="0"><label for="days">Extra worker days</label><input id="days" type="number" min="0"><label for="wage">Daily wage per worker</label><input id="wage" type="number" min="0"><div class="result" id="result">Type your numbers</div><p class="source">Uses only what you type. Illustration of the idea, not a prediction.</p></article><article class="card"><h3>Why it is agentic</h3><p>The AI chains language, schedule, cost and buying steps without being told each one. It stops at money and design.</p><p>Bhashini gives the language layer a public base. It launched on 4 July 2022 and hosts 300+ AI language models.</p><p class="source">Source: MeitY / Bhashini</p></article></div><button class="btn" data-next="2">Next: the business</button>
     </section>
     <section class="page" id="page-2">
@@ -34,9 +37,46 @@
       <h1>Ravi's 30 days</h1><p>Ravi is a fictional contractor who runs a 15-person renovation firm. His pain is surprise costs, late deliveries and arguments about approvals.</p><div class="flow journey"><div>Discover: invited by an architect or owner</div><div>Onboard: imports old chats and Excel</div><div>First change: sees cost and days</div><div>Daily habit: photo and to-do list</div><div>Value: first surprise cost avoided</div><div>Renewal: project memory lives here</div></div>
       <h2>When the AI is wrong</h2><div class="flow"><div>AI action</div><div>Sure and low risk? Proceeds</div><div class="warning">Unsure, money or design? Stop</div><div>Human approves or overrides. Logged.</div></div><div class="grid grid-2"><article class="card"><h3>Guardrails</h3><p>Original translation sits beside the new one. Numbers and units never change by themselves.</p><p>Every answer shows evidence. Price advice shows reasons and confidence. Vendor ranking is never paid for.</p><p>Regular audits log errors and human corrections.</p></article><article class="card"><h3>India compliance</h3><div class="flow mini-flow"><div>13 Nov 2025<br>Rules notified</div><div>18 months<br>Phased compliance</div></div><p>We design for consent, purpose limits and minimum worker data.</p><p class="source">Source: PIB, DPDP Rules 2025</p></article></div><button class="btn" data-next="4">Appendix</button>
     </section>
-    <section class="page" id="page-4"><h1>Appendix</h1><div class="placeholder">My development process: [add sketch, rough framework or early draft]</div><div class="placeholder">AI tools I used and for what: [list]</div><div class="placeholder">Transcript links: [link 1] [link 2]</div><div class="placeholder">Hardest concept and choices: [my text]</div><div class="placeholder">What I accepted, changed, rejected or developed myself: [my text]</div><h2>References</h2><p>Census of India 2011 · PLFS Annual Report 2025, MoSPI · McKinsey 2016 · DPDP Rules 2025, PIB · Bhashini, MeitY.</p></section>
+    <section class="page" id="page-4"><h1>Appendix</h1><div class="placeholder">My development process: [add sketch, rough framework or early draft]</div><div class="placeholder">AI tools I used and for what: [list]</div><div class="placeholder">Transcript links: [link 1] [link 2]</div><div class="placeholder">Hardest concept and choices: [my text]</div><div class="placeholder">What I accepted, changed, rejected or developed myself: [my text]</div><h2>References</h2><p>Census of India 2011 &middot; PLFS Annual Report 2025, MoSPI &middot; McKinsey 2016 &middot; DPDP Rules 2025, PIB &middot; Bhashini, MeitY.</p></section>
   </main>
-  <footer class="footer"><b>SiteScribe.</b><span>Mid Term Assignment · Business of AI · Submitted by Aishwary Soni</span><a href="business.html">Business case ↗</a></footer>
-  <script src="script.js"></script>
+  <footer class="footer"><b>SiteScribe.</b><span>Mid Term Assignment &middot; Business of AI &middot; Submitted by Aishwary Soni</span><button class="footer-link" data-next="2">Business case &rarr;</button></footer>
+  <script>
+const pages = [...document.querySelectorAll(".page")];
+const tabs = [...document.querySelectorAll(".tab-nav button")];
+function showPage(index) {
+  pages.forEach((page, i) => page.classList.toggle("is-active", i === index));
+  tabs.forEach((tab, i) => tab.setAttribute("aria-current", String(i === index)));
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+tabs.forEach((tab, index) => tab.addEventListener("click", () => showPage(index)));
+document.querySelectorAll("[data-next]").forEach((button) => button.addEventListener("click", () => showPage(Number(button.dataset.next))));
+
+const tileButton = document.querySelector("#tile-button");
+const chainItems = [...document.querySelectorAll("#chain span")];
+tileButton?.addEventListener("click", () => {
+  chainItems.forEach((item) => item.classList.remove("lit"));
+  chainItems.forEach((item, index) => window.setTimeout(() => item.classList.add("lit"), (index + 1) * 280));
+});
+
+document.querySelectorAll(".wall button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!open));
+  });
+});
+
+const inputs = ["area", "price", "days", "wage"].map((id) => document.querySelector(`#${id}`));
+const result = document.querySelector("#result");
+function calculate() {
+  const values = inputs.map((input) => Number.parseFloat(input?.value));
+  if (values.some(Number.isNaN)) {
+    result.textContent = "Type your numbers";
+    return;
+  }
+  result.textContent = `Extra cost: ${(values[0] * values[1] + values[2] * values[3]).toLocaleString("en-IN")}`;
+}
+inputs.forEach((input) => input?.addEventListener("input", calculate));
+
+  </script>
 </body>
 </html>
